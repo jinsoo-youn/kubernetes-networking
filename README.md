@@ -1,53 +1,25 @@
 # Kubernetes Networking
 
-This repository provides a comprehensive guide on Kubernetes networking, detailing various Container Network Interface (CNI) plugins such as Calico, Cilium, and others.
+이 저장소는 Kubernetes 네트워킹에 대해 정리한 내용을 공유하며, 
+Kubernetes Network 개요, CNI 설치 데모, Calico CNI에 대한 내용을 다룹니다.
+Calico CNI 구성 방식과 Calico 에 대한 개념을 설명합니다.
 
-## Contents
+## 목표
 
-- Introduction to Kubernetes Networking
-- Overview of CNI Plugins
-    - Calico
-    - Cilium
-    - Other CNI Plugins
-- Step-by-step Setup Instructions
-- Configuration Examples
-- Best Practices
-- Troubleshooting Tips
+- 쿠버네티스 네트워크 구조 이해
+- Calico에 대한 전반적 이해
 
-## Introduction to Kubernetes Networking
+## 개요
 
-Kubernetes networking is a crucial aspect of cluster setup and management. This guide covers the fundamentals of Kubernetes networking and dives into various CNI plugins that can be used to manage network policies and connectivity within a Kubernetes cluster.
+[1. Kubernetes Network 란?](1.%20Kubernetes%20Network%20란%3F.md)
+- Kubernetes 네트워크의 기본 개념 및 구조
+- Pod 간 통신, 서비스 디스커버리, 네트워크 정책 등
 
-## CNI Plugins
+[2. CNI 구성 데모](2.%20CNI%20구성%20데모.md)
+- CNI 플러그인의 역할과 구성 방법
+- Calico와 Cilium을 이용한 네트워크 설정 데모
 
-### Calico
-
-Calico is a popular CNI plugin that provides network security through network policies and high performance through optimized data plane operations. It supports a range of networking options and is widely used in production environments.
-
-### Cilium
-
-Cilium is a powerful CNI plugin that focuses on providing secure network connectivity and load balancing for cloud-native applications using BPF and XDP technologies. It enables deep visibility and security in the network layer.
-
-### Other CNI Plugins
-
-In addition to Calico and Cilium, there are several other CNI plugins available for Kubernetes, each with its unique features and use cases. This guide also includes information on these plugins to help you choose the right solution for your needs.
-
-## Getting Started
-
-To get started with Kubernetes networking and CNI plugins, follow the setup instructions provided in the [setup guide](./docs/setup.md). Each section includes detailed steps and configuration examples to help you configure your Kubernetes cluster with the desired CNI plugin.
-
-## Best Practices
-
-This repository also covers best practices for Kubernetes networking, including tips on optimizing performance, securing network traffic, and managing network policies effectively.
-
-## Troubleshooting
-
-If you encounter any issues while setting up or managing Kubernetes networking, refer to the [troubleshooting guide](./docs/troubleshooting.md) for common problems and their solutions.
-
-## Contributing
-
-We welcome contributions! Please see our [contributing guidelines](./CONTRIBUTING.md) for more details on how to contribute to this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+[3. Calico CNI 란?](3.%20Calico%20CNI%20란%3F.md)
+- Calico의 주요 기능과 특징
+- CNI 플러그인의 역할과 구성 방법
+- Calico 설명
